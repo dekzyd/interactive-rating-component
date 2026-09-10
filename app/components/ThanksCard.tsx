@@ -7,7 +7,7 @@ const ThanksCard = () => {
 
   return (
     <div className="max-w-sm bg-grey-950 p-5 rounded-xl flex flex-col items-center space-y-7 md:space-y-8">
-      <img
+      <Image
         src="/images/illustration-thank-you.svg"
         alt="logo"
         width={170}

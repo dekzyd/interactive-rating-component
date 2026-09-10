@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: "export",
   basePath: "/interactive-rating-component",
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+    dangerouslyAllowSVG: true, // Required for SVGs
+    contentDispositionType: "attachment", // Prevents XSS
+  },
 };
 
 export default nextConfig;

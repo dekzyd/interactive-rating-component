@@ -18,7 +18,7 @@ const RatingCard = () => {
   return (
     <div className="max-w-sm bg-grey-950 p-5 rounded-xl flex flex-col space-y-5 md:space-y-8">
       <span className="logo">
-        <img
+        <Image
           src="/images/icon-star.svg"
           alt="logo"
           width={30}
