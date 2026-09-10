@@ -15,8 +15,6 @@ const RatingCard = () => {
     updateSubmission(true);
   };
 
-  console.log(rating);
-
   return (
     <div className="max-w-sm bg-grey-950 p-5 rounded-xl flex flex-col space-y-5 md:space-y-8">
       <span className="logo">
