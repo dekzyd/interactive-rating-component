@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useRating } from "@/store/ratingStore";
 import { useSubmission } from "@/store/submissionStore";
+import { basePath } from "@/lib/basepath";
 
 const RatingCard = () => {
   const { rating, updateRating } = useRating();
@@ -19,7 +20,7 @@ const RatingCard = () => {
     <div className="max-w-sm bg-grey-950 p-5 rounded-xl flex flex-col space-y-5 md:space-y-8">
       <span className="logo">
         <Image
-          src="/images/icon-star.svg"
+          src={`${basePath}/images/icon-star.svg`}
           alt="logo"
           width={30}
           height={30}

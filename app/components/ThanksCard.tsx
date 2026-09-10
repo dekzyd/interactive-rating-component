@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRating } from "@/store/ratingStore";
+import { basePath } from "@/lib/basepath";
 
 const ThanksCard = () => {
   const { rating } = useRating();
@@ -8,7 +9,7 @@ const ThanksCard = () => {
   return (
     <div className="max-w-sm bg-grey-950 p-5 rounded-xl flex flex-col items-center space-y-7 md:space-y-8">
       <Image
-        src="/images/illustration-thank-you.svg"
+        src={`${basePath}/images/illustration-thank-you.svg`}
         alt="logo"
         width={170}
         height={170}
