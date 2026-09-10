@@ -11,7 +11,7 @@ const ThanksCard = () => {
         src="/images/illustration-thank-you.svg"
         alt="logo"
         width={170}
-        height={100}
+        height={170}
         className="mt-3"
       />
       <div className="px-3 py-1 text-base text-orange-500 bg-grey-900 rounded-full">
